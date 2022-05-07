@@ -1,19 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Articles</title>
-    <link rel="stylesheet" href="./style.css">
-    <link rel="icon" href="./favicon.ico" type="image/x-icon">
-  </head>
-  <body>
+@extends('layouts.app')
+
+@section('content')
     <h1>Mes articles</h1>
 
     @foreach($posts as $post)
       <h2>{{ $post }}</h2>
     @endforeach
 
-  </body>
-</html>
+@endsection
