@@ -1,9 +1,8 @@
 ## Learning Laravel
 
-In this branch, I create multiple routes :
-- /posts
-- /post
-- /articles
+In this branch, I create a controller that :
+- display the view
+- pass value to view
 
 ## Build With
 
