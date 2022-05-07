@@ -9,8 +9,8 @@
     <link rel="icon" href="./favicon.ico" type="image/x-icon">
   </head>
   <body>
-    <main>
-        <h1>Mes articles</h1>
-    </main>
+    <h1>Mes articles</h1>
+    <h2>{{ $title }}</h2>
+    <h2>{{ $title2 }}</h2>
   </body>
 </html>
