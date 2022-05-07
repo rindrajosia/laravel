@@ -9,8 +9,11 @@
     <link rel="icon" href="./favicon.ico" type="image/x-icon">
   </head>
   <body>
-    <main>
-        <h1>Mes articles</h1>
-    </main>
+    <h1>Mes articles</h1>
+
+    @foreach($posts as $post)
+      <h2>{{ $post }}</h2>
+    @endforeach
+
   </body>
 </html>
