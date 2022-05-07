@@ -1,7 +1,9 @@
 ## Learning Laravel
 
-In this branch, I create a new laravel project by using :
-- **composer create-project laravel/laravel .**
+In this branch, I create multiple routes :
+- /posts
+- /post
+- /articles
 
 ## Build With
 
