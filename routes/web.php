@@ -20,3 +20,10 @@ Route::get('/', function () {
 Route::get('/posts', function () {
     return 'Liste d\'articles';
 });
+
+Route::get('/post', function () {
+    return response()->json([
+      'title' => 'mon super titre',
+      'description' => 'ma super description'
+    ]);
+});
