@@ -10,7 +10,10 @@
   </head>
   <body>
     <h1>Mes articles</h1>
-    <h2>{{ $title }}</h2>
-    <h2>{{ $title2 }}</h2>
+
+    @foreach($posts as $post)
+      <h2>{{ $post }}</h2>
+    @endforeach
+
   </body>
 </html>
