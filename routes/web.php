@@ -27,3 +27,7 @@ Route::get('/post', function () {
       'description' => 'ma super description'
     ]);
 });
+
+Route::get('/articles', function(){
+    return view('articles');
+});
