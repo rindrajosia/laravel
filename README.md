@@ -4,6 +4,9 @@ In this branch, I work on asset by :
 - installing all dependencies via npm install
 - install tailwind via npm install -D tailwindcss
 - generate a tailwind.config.js file via npx tailwindcss init
+- generate a tailwind.config.js file via npx tailwindcss init
+- add each of Tailwind's "layers" to resources/css/app.css
+- compile Tailwind
 ## Build With
 
 - PHP
