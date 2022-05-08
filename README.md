@@ -1,9 +1,10 @@
 ## Learning Laravel
 
-In this branch, I create my first table by :
-- using php artisan make:model Post -m
-- migrating it using php artisan migrate ou php artisan migrate:refresh
-
+In this branch, I create my first factory by :
+- using php artisan make:factory PostFactory --model=Post
+- use composer dump-autoload to autoload all files
+- use tinker (shell) to run factory via php artisan tinker
+- use Post::factory()->count(10)->create() command to generate 10 data in our DB
 ## Build With
 
 - PHP
