@@ -16,7 +16,7 @@ class PostController extends Controller
 
   public function show($id)
   {
-    $post = Post::findOrFail($id);
+    $post = Post::where('title', '=', 'Nulla distinctio praesentium aut quia.')->get();
 
     return view('article', [
       'post' => $post
