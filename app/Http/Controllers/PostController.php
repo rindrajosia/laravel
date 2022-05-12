@@ -4,6 +4,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Post;
+use Illuminate\Http\Request;
 
 class PostController extends Controller
 {
@@ -16,11 +17,21 @@ class PostController extends Controller
 
   public function show($id)
   {
-    $post = Post::where('title', '=', 'Nulla distinctio praesentium autj quia.')->firstOrFail();
+    $post = Post::findOrFail($id);
 
     return view('article', [
       'post' => $post
     ]);
+  }
+
+  public function create()
+  {
+    return view('form');
+  }
+
+  public function store(Request $request)
+  {
+    dd($request);
   }
 
   public function contact()
