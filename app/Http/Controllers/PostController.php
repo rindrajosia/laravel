@@ -6,10 +6,7 @@ class PostController extends Controller
 {
   public function index()
   {
-    $posts = [
-      'Mon super premier titre',
-      'Mon super second titre'
-    ];
+    $posts = Post::all();
 
     return view('articles', compact('posts'));
   }
