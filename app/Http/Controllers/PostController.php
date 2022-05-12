@@ -16,12 +16,7 @@ class PostController extends Controller
 
   public function show($id)
   {
-    $posts = [
-      'Mon super premier titre',
-      'Mon super second titre'
-    ];
-
-    $post = $posts[$id] ?? 'Pas de title';
+    $post = Post::findOrFail($id);
 
     return view('article', [
       'post' => $post
