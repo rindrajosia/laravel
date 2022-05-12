@@ -31,7 +31,10 @@ class PostController extends Controller
 
   public function store(Request $request)
   {
-    dd($request);
+    $post = new Post();
+    $post->title = $request->title;
+    $post->content = $request->content;
+    $post->save();
   }
 
   public function contact()
