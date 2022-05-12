@@ -3,8 +3,12 @@
 @section('content')
     <h1>Mes articles</h1>
 
-    @foreach($posts as $post)
-      <h2>{{ $post }}</h2>
-    @endforeach
+    @if($posts->count() > 0)
+      @foreach($posts as $post)
+        <h2><a href="#">{{ $post->title }}</a></h2>
+      @endforeach
+    @else
+      <span>Pas d'article</span>
+    @endif
 
 @endsection
