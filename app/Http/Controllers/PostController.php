@@ -16,7 +16,7 @@ class PostController extends Controller
 
   public function show($id)
   {
-    $post = Post::where('title', '=', 'Nulla distinctio praesentium aut quia.')->first();
+    $post = Post::where('title', '=', 'Nulla distinctio praesentium autj quia.')->firstOrFail();
 
     return view('article', [
       'post' => $post
