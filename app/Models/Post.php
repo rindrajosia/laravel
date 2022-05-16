@@ -6,6 +6,7 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use App\Models\Comment;
 use App\Models\Image;
+use App\Models\Tag;
 
 class Post extends Model
 {
@@ -21,5 +22,10 @@ class Post extends Model
     public function image()
     {
       return $this->hasOne(Image::class);
+    }
+
+    public function tags()
+    {
+      return $this->belongsToMAny(Tag::class);
     }
 }
