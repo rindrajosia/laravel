@@ -8,6 +8,12 @@
       <span>{{ $comment->content }}</span>
     @empty
       <span>Aucun commentaire pour ce post</span>
-    @forelse
+    @endforelse
+
+    @forelse($post->tags as $tag)
+      <span>{{ $tag->name }}</span>
+      @empty
+        <span>Aucun tag pour ce post</span>
+      @endforelse
 
 @endsection
